@@ -1,0 +1,12 @@
+#using xor
+x,y=[int(x) for x in input().split(" ")]
+x=x^y
+y=x^y
+x=x^y
+print(x,end=" ")
+print(y)
+
+#without any operator except =
+x,y=[int(x) for x in input().split(" ")]
+x,y=y,x
+print(x,y)
