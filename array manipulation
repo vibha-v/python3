@@ -1,0 +1,10 @@
+#reverse the array
+arr=[int(x)  for x in input().split()]
+print(arr[::-1])
+
+#merge and sort
+li1=[int(x)  for x in input().split()]
+li2=[int(x)  for x in input().split()]
+l3=li1+li2
+l3.sort()
+print(l3)
