@@ -1,0 +1,19 @@
+#finding the nth largest without sorting the list
+li=[int(x) for x in input().split()]
+n=int(input())
+a=n
+
+while(n!=0):
+    maxi=li[1]
+    if(a==n):
+        for i in li:
+            if(maxi<i):
+                maxi=i
+    else:
+        for i in range(prevmax-1):
+            if(maxi<li[i]):
+                maxi=li[i]
+    prevmax=maxi
+    n-=1
+    
+print(maxi)
