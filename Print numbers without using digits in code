@@ -1,0 +1,4 @@
+i=ord("A")
+j=ord("t")
+for k in range(i,j):
+    print(k-ord('A'),end=" ")
